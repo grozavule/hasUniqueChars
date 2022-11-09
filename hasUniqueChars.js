@@ -1,6 +1,7 @@
 //Given a word, return true if that word contains only unique characters. Return false otherwise.
 
 const hasUniqueChars = (word) => {
+    /*
     //break up the word into an array of its letters
     let letters = word.split('');
     //loop through the letters
@@ -16,6 +17,10 @@ const hasUniqueChars = (word) => {
         }
     }
     return true;
+    */
+   
+    let set = new Set(word);
+    return set.size === word.length;
 
     /*
     console.log(word);
@@ -36,4 +41,4 @@ const hasUniqueChars = (word) => {
     */
 }
 
-console.log(hasUniqueChars('Thanksgiving'));
+console.log(hasUniqueChars('Hello'));
